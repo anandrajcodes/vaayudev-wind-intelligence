@@ -13,7 +13,7 @@ import {
   ReferenceLine,
 } from "recharts";
 
-const API = "http://127.0.0.1:8000";
+const API = "https://vaayudev-wind-intelligence.onrender.com";
 
 function App() {
   const [status, setStatus] = useState("Checking...");
