@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #edf5f0;
+  background: #0b110f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 50% 0%, #18362a 0%, transparent 48%),
+    #0b110f;
+}
+
+button {
+  font: inherit;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.dashboard {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 34px 24px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #293a31;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: #b9f36b;
+  color: #14210f;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.brand h1 {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 23px;
+  letter-spacing: -0.8px;
+}
+
+.brand p {
+  margin: 4px 0 0;
+  color: #8fa197;
+  font-size: 12px;
+}
+
+.connection {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 13px;
+  border: 1px solid #344138;
+  border-radius: 30px;
+  color: #b8c5bd;
+  font-size: 12px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f0b35a;
+}
+
+.connection.online .dot {
+  background: #b9f36b;
+  box-shadow: 0 0 10px #b9f36b77;
+}
+
+.intro {
+  padding: 58px 0 36px;
+}
+
+.eyebrow {
+  color: #b9f36b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.intro h2 {
+  max-width: 720px;
+  margin: 15px 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(32px, 5vw, 49px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.intro > p:not(.eyebrow) {
+  max-width: 650px;
+  color: #9aaba0;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.period {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 18px;
+  padding: 12px 15px;
+  border: 1px solid #34483a;
+  border-radius: 8px;
+  color: #92a298;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.period strong {
+  color: #edf5f0;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.metric-card {
+  min-height: 158px;
+  padding: 24px;
+  border: 1px solid #293a31;
+  border-radius: 13px;
+  background: linear-gradient(145deg, #17221b, #111914);
+}
+
+.metric-card p {
+  margin: 0;
+  color: #a4b4a9;
+  font-size: 13px;
+}
+
+.metric-card h3 {
+  margin: 20px 0 7px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(25px, 3vw, 34px);
+  letter-spacing: -1px;
+}
+
+.metric-card span {
+  color: #829288;
+  font-size: 11px;
+}
+
+.panel {
+  position: relative;
+  margin-top: 22px;
+  padding: 26px;
+  border: 1px solid #293a31;
+  border-radius: 13px;
+  background: #111914;
+}
+
+.panel h3 {
+  margin: 10px 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+}
+
+.panel .eyebrow {
+  margin: 0;
+}
+
+.muted {
+  color: #94a59a;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.panel button {
+  margin-top: 12px;
+  padding: 11px 17px;
+  border: 0;
+  border-radius: 7px;
+  background: #b9f36b;
+  color: #14210f;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.panel button:hover {
+  transform: translateY(-2px);
+  background: #d0ff91;
+}
+
+.error {
+  color: #ff9b91;
+  font-size: 13px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #293a31;
+  color: #7f9085;
+  font-size: 11px;
+}
+
+@media (max-width: 700px) {
+  .dashboard {
+    padding: 22px 17px;
+  }
+
+  .intro {
+    padding-top: 40px;
+  }
+
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-card {
+    min-height: 130px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand h1 {
+    font-size: 20px;
+  }
+
+  .brand p {
+    font-size: 10px;
+  }
+
+  .connection {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .intro h2 {
+    letter-spacing: -1px;
+  }
+}
