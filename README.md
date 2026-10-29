@@ -75,6 +75,8 @@ From the project root, ensure Docker Desktop is running:
 docker compose up -d --build
 ```
 
+This Docker Compose configuration starts the backend API. Start the React frontend separately using the instructions above.
+
 Backend health check: `http://localhost:8000/health`
 
 ## API Endpoints
@@ -109,9 +111,11 @@ Results depend on the selected forecast cutoff, the source data returned by Elex
 
 ## Deployment
 
-- **Live dashboard:** Add the deployed frontend URL here.
-- **Backend API:** Add the deployed backend URL here.
-- **Repository:** Add the public GitHub repository URL here.
+- **Live dashboard:** https://vaayudev-wind-intelligence.vercel.app/
+- **Backend API:** https://vaayudev-wind-intelligence.onrender.com
+- **API documentation:** https://vaayudev-wind-intelligence.onrender.com/docs
+- **Health check:** https://vaayudev-wind-intelligence.onrender.com/health
+- **Public repository:** https://github.com/anandrajcodes/vaayudev-wind-intelligence
 
 ## AI Disclosure
 
@@ -119,4 +123,4 @@ AI assistance was used during development for coding guidance, debugging, docume
 
 ## License
 
-Add an appropriate open-source license before distributing the project.
+No open-source license has been added yet. Unless a license is added, standard copyright restrictions apply to reuse of this repository.
